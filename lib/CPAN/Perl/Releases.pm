@@ -340,7 +340,36 @@ q|Acme::Why::Do::I::Have::To::Parse::HTML::From::Search::CPAN::Org::To::Discover
 
   print "Location: ", $_, "\n" for values %{ $hashref };
 
+=head1 RANT
+
+Strangely, there is not a mechanism to be able determine programmatically the exact CPAN path of a C<perl> tarball.
+
+Okay, I lied, there are two. Kinda.
+
+When I was trying to find a way whilst writing L<smokebrew>, I looked at how L<perlbrew> did it. L<perlbrew> uses what I
+will call the C<search.cpan.org> method. It queries using HTTP a C<perl> distribution link and then uses regex to C<parse>
+the link to the tarball from the returned HTML.
+
+I did not like the idea of this. It sounds flawed to my mind. Reliant on the HTML not changing in strange ways and on
+Internet access as well. ( This is not a dig at either L<perlbrew> or C<search.cpan.org> incidently, just at the fact that
+somebody has to resort to this kind of mechanism ).
+
+The other way that I found was that symlinks were maintained in the C<src/5.0/> directory of CPAN that provided all the
+versions of C<perl> uploaded to CPAN. These were constructed by a script run on the master CPAN site. One could just request
+the relevant tarball from this directory and get the right tarball.
+
+This worked great until the master CPAN site was migrated and the script was not.
+
+And now to this module.
+
 =head1 DESCRIPTION
+
+CPAN::Perl::Releases is a module that contains the mappings of all C<perl> releases that have been uploaded to CPAN to the
+C<authors/id/> path that the tarballs reside in.
+
+This is static data, but newer versions of this module will be made available as new releases of C<perl> are uploaded to CPAN,
+or until a mechanism to programmatically determine the relevant data is decided upon, at which point this module will be
+refactored to obtain the data via that mechanism.
 
 =head1 FUNCTIONS
 
