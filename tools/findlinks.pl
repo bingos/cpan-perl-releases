@@ -22,6 +22,7 @@ while( my $file = readdir $DIR ) {
 }
 
 {
-  use Data::Dumper::Concise;
+  use Data::Dumper;
+  local $Data::Dumper::Indent=1;
   print Dumper( \%data );
 }
