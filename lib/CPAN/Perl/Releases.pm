@@ -360,7 +360,7 @@ the relevant tarball from this directory and get the right tarball.
 
 This worked great until the master CPAN site was migrated and the script was not.
 
-And now to this module.
+Since I first wrote this C<rant> the master CPAN site now has the script, thanks to the sterling efforts of Ask Bjorn Hansen.
 
 =head1 DESCRIPTION
 
