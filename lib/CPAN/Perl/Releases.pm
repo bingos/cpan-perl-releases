@@ -370,12 +370,12 @@ on CPAN where the indicated tarball will be located.
 
 Not all C<perl> releases had C<tar.bz2>, but only a C<tar.gz>.
 
+=back
+
 =head1 SEE ALSO
 
 L<http://www.cpan.org/src/5.0/>
 
 L<http://search.cpan.org/faq.html#Is_there_a_API?>
-
-=back
 
 =cut
