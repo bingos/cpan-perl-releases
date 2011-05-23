@@ -12,7 +12,7 @@ use vars qw[@ISA @EXPORT_OK];
 # Data gathered from using findlinks.pl script in this dists tools/
 # directory, run over the src/5.0 of a local CPAN mirror.
 
-my $data =
+our $data =
 {
   "5.003_07" => {
     "tar.gz" => "A/AN/ANDYD/perl5.003_07.tar.gz"

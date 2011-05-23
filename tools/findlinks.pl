@@ -9,7 +9,7 @@ die unless -d $dir;
 
 my %data;
 
-opendir my $DIR, $dir;
+opendir( my $DIR, $dir );
 
 while( my $file = readdir $DIR ) {
   next if $file =~ /^\./ or $file !~ /^perl.+(bz2|gz)$/;
