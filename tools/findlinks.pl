@@ -21,8 +21,13 @@ while( my $file = readdir $DIR ) {
   $data{ $d->version }->{ $d->extension} = $link;
 }
 
-{
-  use Data::Dumper;
-  local $Data::Dumper::Indent=1;
-  print Dumper( \%data );
+print "{\n";
+foreach my $perl ( sort keys %data ) {
+  print qq!  "$perl" => {\n!;
+  print qq!    "$_" => "!, $data{$perl}->{$_}, qq{",\n}
+    for sort keys %{ $data{$perl} };
+  print "  },\n";
 }
+print "};\n";
+
+exit 0;
