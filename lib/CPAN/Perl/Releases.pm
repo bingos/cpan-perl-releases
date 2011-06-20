@@ -123,6 +123,10 @@ our $data =
     "tar.bz2" => "L/LB/LBROCARD/perl-5.12.4-RC2.tar.bz2",
     "tar.gz" => "L/LB/LBROCARD/perl-5.12.4-RC2.tar.gz",
   },
+  "5.12.4" => {
+    "tar.bz2" => "L/LB/LBROCARD/perl-5.12.4.tar.bz2",
+    "tar.gz" => "L/LB/LBROCARD/perl-5.12.4.tar.gz",
+  },
   "5.13.0" => {
     "tar.bz2" => "L/LB/LBROCARD/perl-5.13.0.tar.bz2",
     "tar.gz" => "L/LB/LBROCARD/perl-5.13.0.tar.gz",
