@@ -201,6 +201,10 @@ our $data =
     "tar.bz2" => "J/JE/JESSE/perl-5.14.1.tar.bz2",
     "tar.gz" => "J/JE/JESSE/perl-5.14.1.tar.gz",
   },
+  "5.14.2-RC1" => {
+    "tar.bz2" => "F/FL/FLORA/perl-5.14.2-RC1.tar.bz2",
+    "tar.gz" => "F/FL/FLORA/perl-5.14.2-RC1.tar.gz",
+  },
   "5.15.0" => {
     "tar.bz2" => "D/DA/DAGOLDEN/perl-5.15.0.tar.bz2",
     "tar.gz" => "D/DA/DAGOLDEN/perl-5.15.0.tar.gz",
