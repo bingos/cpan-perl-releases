@@ -237,6 +237,10 @@ our $data =
     "tar.bz2" => "D/DR/DROLSKY/perl-5.15.6.tar.bz2",
     "tar.gz" => "D/DR/DROLSKY/perl-5.15.6.tar.gz",
   },
+  "5.15.7" => {
+    "tar.bz2" => "B/BI/BINGOS/perl-5.15.7.tar.bz2",
+    "tar.gz" => "B/BI/BINGOS/perl-5.15.7.tar.gz",
+  },
   "5.6.0" => {
     "tar.gz" => "G/GS/GSAR/perl-5.6.0.tar.gz",
   },
