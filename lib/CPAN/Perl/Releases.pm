@@ -268,6 +268,10 @@ our $data =
     "tar.bz2" => "Z/ZE/ZEFRAM/perl-5.17.0.tar.bz2",
     "tar.gz" => "Z/ZE/ZEFRAM/perl-5.17.0.tar.gz",
   },
+  "5.17.1" => {
+    "tar.bz2" => "D/DO/DOY/perl-5.17.1.tar.bz2",
+    "tar.gz" => "D/DO/DOY/perl-5.17.1.tar.gz",
+  },
   "5.6.0" => {
     "tar.gz" => "G/GS/GSAR/perl-5.6.0.tar.gz",
   },
