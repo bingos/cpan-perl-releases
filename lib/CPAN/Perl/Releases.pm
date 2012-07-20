@@ -272,6 +272,10 @@ our $data =
     "tar.bz2" => "D/DO/DOY/perl-5.17.1.tar.bz2",
     "tar.gz" => "D/DO/DOY/perl-5.17.1.tar.gz",
   },
+  "5.17.2" => {
+    "tar.bz2" => "T/TO/TONYC/perl-5.17.2.tar.bz2",
+    "tar.gz" => "T/TO/TONYC/perl-5.17.2.tar.gz",
+  },
   "5.6.0" => {
     "tar.gz" => "G/GS/GSAR/perl-5.6.0.tar.gz",
   },
