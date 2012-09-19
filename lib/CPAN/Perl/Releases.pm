@@ -288,6 +288,10 @@ our $data =
     "tar.bz2" => "S/SH/SHAY/perl-5.17.3.tar.bz2",
     "tar.gz" => "S/SH/SHAY/perl-5.17.3.tar.gz",
   },
+  "5.17.4" => {
+    "tar.bz2" => "F/FL/FLORA/perl-5.17.4.tar.bz2",
+    "tar.gz" => "F/FL/FLORA/perl-5.17.4.tar.gz",
+  },
   "5.6.0" => {
     "tar.gz" => "G/GS/GSAR/perl-5.6.0.tar.gz",
   },
