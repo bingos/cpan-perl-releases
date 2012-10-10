@@ -213,6 +213,10 @@ our $data =
     "tar.bz2" => "D/DO/DOM/perl-5.14.3-RC1.tar.bz2",
     "tar.gz" => "D/DO/DOM/perl-5.14.3-RC1.tar.gz",
   },
+  "5.14.3-RC2" => {
+    "tar.bz2" => "D/DO/DOM/perl-5.14.3-RC2.tar.bz2",
+    "tar.gz" => "D/DO/DOM/perl-5.14.3-RC2.tar.gz",
+  },
   "5.15.0" => {
     "tar.bz2" => "D/DA/DAGOLDEN/perl-5.15.0.tar.bz2",
     "tar.gz" => "D/DA/DAGOLDEN/perl-5.15.0.tar.gz",
