@@ -332,6 +332,10 @@ our $data =
     "tar.bz2" => "R/RJ/RJBS/perl-5.17.6.tar.bz2",
     "tar.gz" => "R/RJ/RJBS/perl-5.17.6.tar.gz",
   },
+  "5.17.7" => {
+    "tar.bz2" => "D/DR/DROLSKY/perl-5.17.7.tar.bz2",
+    "tar.gz" => "D/DR/DROLSKY/perl-5.17.7.tar.gz",
+  },
   "5.6.0" => {
     "tar.gz" => "G/GS/GSAR/perl-5.6.0.tar.gz",
   },
