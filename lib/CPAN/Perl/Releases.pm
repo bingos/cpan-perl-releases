@@ -340,6 +340,10 @@ our $data =
     "tar.bz2" => "A/AR/ARC/perl-5.17.8.tar.bz2",
     "tar.gz" => "A/AR/ARC/perl-5.17.8.tar.gz",
   },
+  "5.17.9" => {
+    "tar.bz2" => "B/BI/BINGOS/perl-5.17.9.tar.bz2",
+    "tar.gz" => "B/BI/BINGOS/perl-5.17.9.tar.gz",
+  },
   "5.6.0" => {
     "tar.gz" => "G/GS/GSAR/perl-5.6.0.tar.gz",
   },
