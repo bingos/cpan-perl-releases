@@ -364,6 +364,10 @@ our $data =
     "tar.bz2" => "B/BI/BINGOS/perl-5.17.9.tar.bz2",
     "tar.gz" => "B/BI/BINGOS/perl-5.17.9.tar.gz",
   },
+  "5.17.10" => {
+    "tar.bz2" => "C/CO/CORION/perl-5.17.10.tar.bz2",
+    "tar.gz" => "C/CO/CORION/perl-5.17.10.tar.gz",
+  },
   "5.6.0" => {
     "tar.gz" => "G/GS/GSAR/perl-5.6.0.tar.gz",
   },
