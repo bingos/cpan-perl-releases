@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 use Test::More qw[no_plan];
-use CPAN::Perl::Releases qw[perl_tarballs];
+use CPAN::Perl::Releases qw[perl_tarballs perl_versions];
 
 my $perl = '5.14.0';
 
@@ -29,3 +29,9 @@ my $expected = {
   my $got = perl_tarballs( '6.0.0' );
   ok( !$got, 'Should not have this release' );
 }
+
+my @versions = perl_versions();
+
+ok (grep(/^5.6.1$/, @versions), "has 5.6.1");
+ok (grep(/^5.18.0$/, @versions), "has 5.18.0");
+ok (grep(/^5.19.0$/, @versions), "has 5.19.0");
