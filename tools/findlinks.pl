@@ -21,8 +21,15 @@ while( my $file = readdir $DIR ) {
   $data{ $d->version }->{ $d->extension} = $link;
 }
 
+my %v = map {
+    my @v = split(qr/[-._]0*/, $_);
+    $v[2] ||= 0;
+    $v[3] ||= 'Z';
+    ($_ => sprintf '%d.%03d%03d-%s', @v)
+} keys %data;
+
 print "{\n";
-foreach my $perl ( sort keys %data ) {
+foreach my $perl ( sort { $v{$a} cmp $v{$b} } keys %data ) {
   print qq!  "$perl" => {\n!;
   print qq!    "$_" => "!, $data{$perl}->{$_}, qq{",\n}
     for sort keys %{ $data{$perl} };
