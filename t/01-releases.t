@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 use Test::More qw[no_plan];
-use CPAN::Perl::Releases qw[perl_tarballs perl_versions];
+use CPAN::Perl::Releases qw[perl_tarballs perl_versions perl_pumpkins];
 
 my $perl = '5.14.0';
 
@@ -35,3 +35,9 @@ my @versions = perl_versions();
 ok (grep(/^5.6.1$/, @versions), "has 5.6.1");
 ok (grep(/^5.18.0$/, @versions), "has 5.18.0");
 ok (grep(/^5.19.0$/, @versions), "has 5.19.0");
+
+my @pumpkins = perl_pumpkins();
+
+ok (grep(/^BINGOS$/, @pumpkins), "has BINGOS");
+ok (grep(/^JESSE$/, @pumpkins), "has JESSE");
+ok (!grep(/^LWALL$/, @pumpkins), "canz delegatez");
