@@ -435,7 +435,18 @@ sub perl_tarballs {
 }
 
 sub perl_versions {
-    return keys %$data;
+    return sort _by_version keys %$data;
+}
+
+
+sub _by_version {
+  my %v = map {
+    my @v = split(qr/[-._]0*/, $_);
+    $v[2] ||= 0;
+    $v[3] ||= 'Z';
+    ($_ => sprintf '%d.%03d%03d-%s', @v)
+  } $a, $b;
+  $v{$a} cmp $v{$b};
 }
 
 sub perl_pumpkins {
@@ -489,7 +500,8 @@ Not all C<perl> releases had C<tar.bz2>, but only a C<tar.gz>.
 
 =item C<perl_versions>
 
-Returns the list of all the perl versions supported by the module.
+Returns the list of all the perl versions supported by the module in ascending order. C<TRIAL> and C<RC> will be lower
+than an actual release.
 
 =item C<perl_pumpkins>
 
