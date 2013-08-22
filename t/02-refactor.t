@@ -44,12 +44,6 @@ my $stuff =
   "5.10.0" => {
     "tar.gz" => "R/RG/RGARCIA/perl-5.10.0.tar.gz",
   },
-  "5.10.0-RC1" => {
-    "tar.gz" => "R/RG/RGARCIA/perl-5.10.0-RC1.tar.gz",
-  },
-  "5.10.0-RC2" => {
-    "tar.gz" => "R/RG/RGARCIA/perl-5.10.0-RC2.tar.gz",
-  },
   "5.10.1" => {
     "tar.bz2" => "D/DA/DAPM/perl-5.10.1.tar.bz2",
     "tar.gz" => "D/DA/DAPM/perl-5.10.1.tar.gz",
@@ -86,45 +80,17 @@ my $stuff =
     "tar.bz2" => "J/JE/JESSE/perl-5.12.1.tar.bz2",
     "tar.gz" => "J/JE/JESSE/perl-5.12.1.tar.gz",
   },
-  "5.12.1-RC1" => {
-    "tar.bz2" => "J/JE/JESSE/perl-5.12.1-RC1.tar.bz2",
-    "tar.gz" => "J/JE/JESSE/perl-5.12.1-RC1.tar.gz",
-  },
-  "5.12.1-RC2" => {
-    "tar.bz2" => "J/JE/JESSE/perl-5.12.1-RC2.tar.bz2",
-    "tar.gz" => "J/JE/JESSE/perl-5.12.1-RC2.tar.gz",
-  },
   "5.12.2" => {
     "tar.bz2" => "J/JE/JESSE/perl-5.12.2.tar.bz2",
     "tar.gz" => "J/JE/JESSE/perl-5.12.2.tar.gz",
-  },
-  "5.12.2-RC1" => {
-    "tar.bz2" => "J/JE/JESSE/perl-5.12.2-RC1.tar.bz2",
-    "tar.gz" => "J/JE/JESSE/perl-5.12.2-RC1.tar.gz",
   },
   "5.12.3" => {
     "tar.bz2" => "R/RJ/RJBS/perl-5.12.3.tar.bz2",
     "tar.gz" => "R/RJ/RJBS/perl-5.12.3.tar.gz",
   },
-  "5.12.4-RC1" => {
-    "tar.bz2" => "L/LB/LBROCARD/perl-5.12.4-RC1.tar.bz2",
-    "tar.gz" => "L/LB/LBROCARD/perl-5.12.4-RC1.tar.gz",
-  },
-  "5.12.4-RC2" => {
-    "tar.bz2" => "L/LB/LBROCARD/perl-5.12.4-RC2.tar.bz2",
-    "tar.gz" => "L/LB/LBROCARD/perl-5.12.4-RC2.tar.gz",
-  },
   "5.12.4" => {
     "tar.bz2" => "L/LB/LBROCARD/perl-5.12.4.tar.bz2",
     "tar.gz" => "L/LB/LBROCARD/perl-5.12.4.tar.gz",
-  },
-  "5.12.5-RC1" => {
-    "tar.bz2" => "D/DO/DOM/perl-5.12.5-RC1.tar.bz2",
-    "tar.gz" => "D/DO/DOM/perl-5.12.5-RC1.tar.gz",
-  },
-  "5.12.5-RC2" => {
-    "tar.bz2" => "D/DO/DOM/perl-5.12.5-RC2.tar.bz2",
-    "tar.gz" => "D/DO/DOM/perl-5.12.5-RC2.tar.gz",
   },
   "5.12.5" => {
     "tar.bz2" => "D/DO/DOM/perl-5.12.5.tar.bz2",
@@ -182,41 +148,13 @@ my $stuff =
     "tar.bz2" => "J/JE/JESSE/perl-5.14.0.tar.bz2",
     "tar.gz" => "J/JE/JESSE/perl-5.14.0.tar.gz",
   },
-  "5.14.0-RC1" => {
-    "tar.bz2" => "J/JE/JESSE/perl-5.14.0-RC1.tar.bz2",
-    "tar.gz" => "J/JE/JESSE/perl-5.14.0-RC1.tar.gz",
-  },
-  "5.14.0-RC2" => {
-    "tar.bz2" => "J/JE/JESSE/perl-5.14.0-RC2.tar.bz2",
-    "tar.gz" => "J/JE/JESSE/perl-5.14.0-RC2.tar.gz",
-  },
-  "5.14.0-RC3" => {
-    "tar.bz2" => "J/JE/JESSE/perl-5.14.0-RC3.tar.bz2",
-    "tar.gz" => "J/JE/JESSE/perl-5.14.0-RC3.tar.gz",
-  },
-  "5.14.1-RC1" => {
-    "tar.bz2" => "J/JE/JESSE/perl-5.14.1-RC1.tar.bz2",
-    "tar.gz" => "J/JE/JESSE/perl-5.14.1-RC1.tar.gz",
-  },
   "5.14.1" => {
     "tar.bz2" => "J/JE/JESSE/perl-5.14.1.tar.bz2",
     "tar.gz" => "J/JE/JESSE/perl-5.14.1.tar.gz",
   },
-  "5.14.2-RC1" => {
-    "tar.bz2" => "F/FL/FLORA/perl-5.14.2-RC1.tar.bz2",
-    "tar.gz" => "F/FL/FLORA/perl-5.14.2-RC1.tar.gz",
-  },
   "5.14.2" => {
     "tar.bz2" => "F/FL/FLORA/perl-5.14.2.tar.bz2",
     "tar.gz" => "F/FL/FLORA/perl-5.14.2.tar.gz",
-  },
-  "5.14.3-RC1" => {
-    "tar.bz2" => "D/DO/DOM/perl-5.14.3-RC1.tar.bz2",
-    "tar.gz" => "D/DO/DOM/perl-5.14.3-RC1.tar.gz",
-  },
-  "5.14.3-RC2" => {
-    "tar.bz2" => "D/DO/DOM/perl-5.14.3-RC2.tar.bz2",
-    "tar.gz" => "D/DO/DOM/perl-5.14.3-RC2.tar.gz",
   },
   "5.14.3" => {
     "tar.bz2" => "D/DO/DOM/perl-5.14.3.tar.bz2",
@@ -274,40 +212,17 @@ my $stuff =
     "tar.bz2" => "A/AB/ABIGAIL/perl-5.15.9.tar.bz2",
     "tar.gz" => "A/AB/ABIGAIL/perl-5.15.9.tar.gz",
   },
-  "5.16.0-RC0" => {
-    "tar.gz" => "R/RJ/RJBS/perl-5.16.0-RC0.tar.gz",
-  },
-  "5.16.0-RC1" => {
-    "tar.bz2" => "R/RJ/RJBS/perl-5.16.0-RC1.tar.bz2",
-    "tar.gz" => "R/RJ/RJBS/perl-5.16.0-RC1.tar.gz",
-  },
-  "5.16.0-RC2" => {
-    "tar.bz2" => "R/RJ/RJBS/perl-5.16.0-RC2.tar.bz2",
-    "tar.gz" => "R/RJ/RJBS/perl-5.16.0-RC2.tar.gz",
-  },
   "5.16.0" => {
     "tar.bz2" => "R/RJ/RJBS/perl-5.16.0.tar.bz2",
     "tar.gz" => "R/RJ/RJBS/perl-5.16.0.tar.gz",
-  },
-  "5.16.1-RC1" => {
-    "tar.bz2" => "R/RJ/RJBS/perl-5.16.1-RC1.tar.bz2",
-    "tar.gz" => "R/RJ/RJBS/perl-5.16.1-RC1.tar.gz",
   },
   "5.16.1" => {
     "tar.bz2" => "R/RJ/RJBS/perl-5.16.1.tar.bz2",
     "tar.gz" => "R/RJ/RJBS/perl-5.16.1.tar.gz",
   },
-  "5.16.2-RC1" => {
-    "tar.bz2" => "R/RJ/RJBS/perl-5.16.2-RC1.tar.bz2",
-    "tar.gz" => "R/RJ/RJBS/perl-5.16.2-RC1.tar.gz",
-  },
   "5.16.2" => {
     "tar.bz2" => "R/RJ/RJBS/perl-5.16.2.tar.bz2",
     "tar.gz" => "R/RJ/RJBS/perl-5.16.2.tar.gz",
-  },
-  "5.16.3-RC1" => {
-    "tar.bz2" => "R/RJ/RJBS/perl-5.16.3-RC1.tar.bz2",
-    "tar.gz" => "R/RJ/RJBS/perl-5.16.3-RC1.tar.gz",
   },
   "5.16.3" => {
     "tar.bz2" => "R/RJ/RJBS/perl-5.16.3.tar.bz2",
