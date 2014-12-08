@@ -328,6 +328,11 @@ my $stuff =
     "tar.bz2" => "S/SH/SHAY/perl-5.19.3.tar.bz2",
     "tar.gz" => "S/SH/SHAY/perl-5.19.3.tar.gz",
   },
+  "5.21.6" => {
+    "tar.bz2" => "B/BI/BINGOS/perl-5.21.6.tar.bz2",
+    "tar.gz" => "B/BI/BINGOS/perl-5.21.6.tar.gz",
+    "tar.xz" => "B/BI/BINGOS/perl-5.21.6.tar.xz",
+  },
   "5.6.0" => {
     "tar.gz" => "G/GS/GSAR/perl-5.6.0.tar.gz",
   },

@@ -155,7 +155,7 @@ our $data =
 "5.18.3" => { id => 'RJBS' },
 "5.18.4" => { id => 'RJBS' },
 "5.21.5" => { id => 'ABIGAIL' },
-"5.21.6" => { id => 'BINGOS' },
+"5.21.6" => { id => 'BINGOS', xz => 1 },
 };
 
 sub perl_tarballs {
@@ -174,6 +174,7 @@ sub perl_tarballs {
   my $foo = { };
   $foo->{'tar.gz'} = "$path/$perl.tar.gz" unless $onlybz2;
   $foo->{'tar.bz2'} = "$path/$perl.tar.bz2" unless $onlygz;
+  $foo->{'tar.xz'} = "$path/$perl.tar.xz" if $data->{ $vers }->{xz};
   $cache->{ $vers } = $foo;
   return { %$foo };
 }
@@ -241,6 +242,8 @@ on CPAN where the indicated tarball will be located.
   }
 
 Not all C<perl> releases had C<tar.bz2>, but only a C<tar.gz>.
+
+Perl tarballs may also be compressed using C<xz> and therefore have a C<tar.xz> entry.
 
 =item C<perl_versions>
 
