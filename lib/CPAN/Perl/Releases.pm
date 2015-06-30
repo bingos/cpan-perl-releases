@@ -155,18 +155,18 @@ our $data =
 "5.18.3" => { id => 'RJBS' },
 "5.18.4" => { id => 'RJBS' },
 "5.21.5" => { id => 'ABIGAIL' },
-"5.21.6" => { id => 'BINGOS', xz => 1 },
-"5.21.7" => { id => 'CORION', xz => 1 },
-"5.21.8" => { id => 'WOLFSAGE', xz => 1 },
+"5.21.6" => { id => 'BINGOS' },
+"5.21.7" => { id => 'CORION' },
+"5.21.8" => { id => 'WOLFSAGE' },
 "5.20.2-RC1" => { id => 'SHAY' },
 "5.20.2" => { id => 'SHAY' },
-"5.21.9" => { id => 'XSAWYERX', xz => 1 },
-"5.21.10" => { id => 'SHAY', xz => 1 },
-"5.21.11" => { id => 'SHAY', xz => 1 },
-"5.22.0-RC1" => { id => 'RJBS', xz => 1 },
-"5.22.0-RC2" => { id => 'RJBS', xz => 1 },
-"5.22.0" => { id => 'RJBS', xz => 1 },
-"5.23.0" => { id => 'RJBS', xz => 1 },
+"5.21.9" => { id => 'XSAWYERX' },
+"5.21.10" => { id => 'SHAY' },
+"5.21.11" => { id => 'SHAY' },
+"5.22.0-RC1" => { id => 'RJBS' },
+"5.22.0-RC2" => { id => 'RJBS' },
+"5.22.0" => { id => 'RJBS' },
+"5.23.0" => { id => 'RJBS' },
 };
 
 sub perl_tarballs {
@@ -182,10 +182,20 @@ sub perl_tarballs {
   my $perl = join $sep, 'perl', $vers;
   my $onlygz = 1 if $vers =~ m!(?-xism:5.(?:00(?:4(?:_0[12345])?|5(?:_0[1234])?|3_07)|1(?:0.0(?:-RC[12])?|6.0-RC0)|6.(?:[02]|1(?:-TRIAL[123])?)|9.[12345]|7.[0123]|8.[01]))! || $data->{ $vers }->{onlygz};
   my $onlybz2 = 1 if $data->{ $vers }->{onlybz2};
+  my $noxz = 1 if $data->{ $vers }->{noxz};
+  my $lvers;
+  {
+    my $tvers = $vers;
+    $tvers =~ s!\-?(TRIAL|RC)\d*!!g;
+    $tvers =~ s!_!.!g;
+    my @parts = split m!\.!, $tvers;
+    push @parts, 0 if scalar @parts < 3;
+    $lvers = sprintf("%d.%03d%03d",@parts);
+  }
   my $foo = { };
   $foo->{'tar.gz'} = "$path/$perl.tar.gz" unless $onlybz2;
   $foo->{'tar.bz2'} = "$path/$perl.tar.bz2" unless $onlygz;
-  $foo->{'tar.xz'} = "$path/$perl.tar.xz" if $data->{ $vers }->{xz};
+  $foo->{'tar.xz'} = "$path/$perl.tar.xz" if $lvers > 5.021005 && !$noxz;
   $cache->{ $vers } = $foo;
   return { %$foo };
 }

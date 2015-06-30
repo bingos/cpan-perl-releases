@@ -333,6 +333,11 @@ my $stuff =
     "tar.gz" => "B/BI/BINGOS/perl-5.21.6.tar.gz",
     "tar.xz" => "B/BI/BINGOS/perl-5.21.6.tar.xz",
   },
+  "5.22.0" => {
+    "tar.bz2" => "R/RJ/RJBS/perl-5.22.0.tar.bz2",
+    "tar.gz" => "R/RJ/RJBS/perl-5.22.0.tar.gz",
+    "tar.xz" => "R/RJ/RJBS/perl-5.22.0.tar.xz",
+  },
   "5.6.0" => {
     "tar.gz" => "G/GS/GSAR/perl-5.6.0.tar.gz",
   },
@@ -422,7 +427,7 @@ my $stuff =
   },
 };
 
-foreach my $perl ( keys %$stuff ) {
+foreach my $perl ( sort keys %$stuff ) {
   my $got = perl_tarballs( $perl );
   my $expected = $stuff->{ $perl };
   is_deeply( $got, $expected, "Perl $perl was correct" );
