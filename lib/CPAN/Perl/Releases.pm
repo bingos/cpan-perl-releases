@@ -174,6 +174,8 @@ our $data =
 "5.22.2" => { id => 'SHAY' },
 "5.24.0-RC4" => { id => 'RJBS' },
 "5.24.0-RC5" => { id => 'RJBS' },
+"5.24.0" => { id => 'RJBS' },
+"5.25.0" => { id => 'RJBS' },
 };
 
 sub perl_tarballs {
