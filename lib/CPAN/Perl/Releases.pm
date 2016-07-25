@@ -16,7 +16,6 @@ use Exporter;
 our $cache = { };
 our $data =
 {
-"5.003_07" => { id => 'ANDYD' },
 "5.004" => { id => 'CHIPS' },
 "5.004_01" => { id => 'TIMB' },
 "5.004_02" => { id => 'TIMB' },

@@ -5,9 +5,6 @@ use CPAN::Perl::Releases qw[perl_tarballs perl_versions perl_pumpkins];
 
 my $stuff =
 {
-  "5.003_07" => {
-    "tar.gz" => "A/AN/ANDYD/perl5.003_07.tar.gz",
-  },
   "5.004" => {
     "tar.gz" => "C/CH/CHIPS/perl5.004.tar.gz",
   },
