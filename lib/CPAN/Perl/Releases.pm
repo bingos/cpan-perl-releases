@@ -212,6 +212,7 @@ our $data =
 "5.27.3" => { id => 'WOLFSAGE' },
 "5.24.3-RC1" => { id => 'SHAY' },
 "5.26.1-RC1" => { id => 'SHAY' },
+"5.27.4" => { id => 'GENEHACK' },
 };
 
 sub perl_tarballs {
