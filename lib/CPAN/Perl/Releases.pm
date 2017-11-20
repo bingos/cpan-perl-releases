@@ -243,7 +243,7 @@ sub perl_tarballs {
   }
   my $foo = { };
   $foo->{'tar.gz'} = "$path/$perl.tar.gz" unless $onlybz2;
-  $foo->{'tar.bz2'} = "$path/$perl.tar.bz2" unless $onlygz;
+  $foo->{'tar.bz2'} = "$path/$perl.tar.bz2" unless $onlygz || $lvers > 5.027005;
   $foo->{'tar.xz'} = "$path/$perl.tar.xz" if $lvers > 5.021005 && !$noxz;
   $cache->{ $vers } = $foo;
   return { %$foo };
