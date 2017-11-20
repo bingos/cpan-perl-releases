@@ -161,7 +161,7 @@ our $data =
 "5.22.1-RC3" => { id => 'SHAY' },
 "5.22.1-RC4" => { id => 'SHAY' },
 "5.22.1" => { id => 'SHAY' },
-"5.23.6" => { id => 'DAGOLDEN' },
+"5.23.6" => { id => 'DAGOLDEN', noxz => 1 },
 "5.23.7" => { id => 'STEVAN' },
 "5.23.9" => { id => 'ABIGAIL' },
 "5.22.2-RC1" => { id => 'SHAY' },
