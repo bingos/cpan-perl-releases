@@ -338,6 +338,4 @@ Returns a sorted list of all PAUSE IDs of Perl pumpkins.
 
 L<http://www.cpan.org/src/5.0/>
 
-L<http://search.cpan.org/faq.html#Is_there_a_API?>
-
 =cut
