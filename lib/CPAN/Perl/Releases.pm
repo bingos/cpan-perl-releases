@@ -225,6 +225,7 @@ our $data =
 "5.29.0" => { id => 'XSAWYERX' },
 "5.29.1" => { id => 'SHAY' },
 "5.29.2" => { id => 'BINGOS' },
+"5.29.3" => { id => 'GENEHACK' },
 };
 
 sub perl_tarballs {
