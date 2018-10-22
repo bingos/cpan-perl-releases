@@ -231,6 +231,7 @@ our $data =
 
 sub perl_tarballs {
   my $vers = shift;
+  return unless defined $vers;
   $vers = shift if eval { $vers->isa(__PACKAGE__) };
   return unless exists $data->{ $vers };
   if ( exists $cache->{ $vers } ) {
