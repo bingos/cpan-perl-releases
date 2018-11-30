@@ -228,6 +228,8 @@ our $data =
 "5.29.3" => { id => 'GENEHACK' },
 "5.29.4" => { id => 'ARC' },
 "5.29.5" => { id => 'ETHER' },
+"5.26.3" => { id => 'SHAY' },
+"5.28.1" => { id => 'SHAY' },
 };
 
 sub perl_tarballs {
