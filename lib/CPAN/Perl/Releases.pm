@@ -261,6 +261,7 @@ our $data =
 "5.28.3" => { id => 'XSAWYERX' },
 "5.30.3-RC1" => { id => 'XSAWYERX' },
 "5.30.3" => { id => 'XSAWYERX' },
+"5.32.0-RC1" => { id => 'XSAWYERX' },
 };
 
 sub perl_tarballs {
