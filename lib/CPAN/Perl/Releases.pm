@@ -276,6 +276,7 @@ our $data =
 "5.33.8" => { id => 'ATOOMIC' },
 "5.33.9" => { id => 'TODDR' },
 "5.34.0-RC1" => { id => 'XSAWYERX' },
+"5.34.0-RC2" => { id => 'XSAWYERX' },
 };
 
 sub perl_tarballs {
