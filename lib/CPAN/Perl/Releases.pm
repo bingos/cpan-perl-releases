@@ -303,6 +303,7 @@ our $data =
 "5.36.3" => { id => 'PEVANS' },
 "5.38.2" => { id => 'PEVANS' },
 "5.39.6" => { id => 'BOOK' },
+"5.39.7" => { id => 'CORION' },
 };
 
 sub perl_tarballs {
