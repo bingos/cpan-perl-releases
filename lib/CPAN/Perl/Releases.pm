@@ -313,6 +313,7 @@ our $data =
 "5.41.4" => { id => 'CONTRA' },
 "5.41.5" => { id => 'HYDAHY' },
 "5.41.6" => { id => 'CONTRA' },
+"5.41.7" => { id => 'CORION' },
 };
 
 sub perl_tarballs {
