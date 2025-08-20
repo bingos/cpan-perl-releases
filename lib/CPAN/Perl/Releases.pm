@@ -337,6 +337,7 @@ our $data =
 "5.40.3-RC1" => { id => 'SHAY' },
 "5.38.5" => { id => 'SHAY' },
 "5.40.3" => { id => 'SHAY' },
+"5.43.2" => { id => 'ETHER' },
 };
 
 sub perl_tarballs {
